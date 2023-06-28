@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .phrase_card {
+    margin: 2rem;
+    padding: 2rem;
+    height: 400px;
+    background-image: url(/src/assets/pngwing.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phrase_card p {
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .btn_phrase {
+    margin-top: 1rem;
+  }
+  

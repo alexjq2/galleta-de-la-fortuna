@@ -19,11 +19,12 @@ function App() {
   document.body.style = `background-image: url(${images[3 - (index % 3)]})`
 
   return (
-    <>
-    <FortuneCookie data={phrase [index]}/>
-    <button onClick={random}>Otro</button>
-    <button>Abrir</button>
-    </>
+    <article className='container'>
+      <FortuneCookie data={phrase [index]}/>
+      <div className='btn_phrase'>
+        <button onClick={random}>Otro</button>
+      </div>
+    </article>
   )
 }
 

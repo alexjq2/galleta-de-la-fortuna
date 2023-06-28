@@ -1,42 +1,72 @@
 body {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
+    margin: 0;
+    padding: 0;     
+}
   
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+.container {
+   width: 400px;
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   gap: 9px;
+   align-items: center;
+}
+.container h1 {
+   font-family: 'Lilita One', cursive;
+   color: beige;
+   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
   
-  .phrase_card {
-    margin: 2rem;
-    padding: 2rem;
-    height: 400px;
-    background-image: url(/src/assets/pngwing.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.phrase_card {
+   background-image: url(/src/assets/pngwing.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 380px;
+   max-width: 350px;
+   min-width: 350px;
+   height: 120px;
+   text-align: center;
+}
+
+.phrase_card p {
+   margin: 26px 40px 5px 40px;
+   max-height: 53px;
+   min-height: 53px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.phrase_card span {
+   margin-bottom: 10px;
+}
+.btn_phrase button {
+    -webkit-transition: all 0.7s ease;
+    border: none;
+    transition: all 0.7s ease;
+    background: transparent;
+    color: #f6f7c5;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  
-  .phrase_card p {
-    max-width: 400px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .btn_phrase {
-    margin-top: 1rem;
-  }
-  
+
+.btn_phrase button img {
+    width: 50px;
+}
+

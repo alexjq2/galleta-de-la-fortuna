@@ -12,17 +12,34 @@ function App() {
     'fondo4.jpg'
   ]
   const [index, setIndex] = useState(0)
+  const [ran, setRan] = useState(0)
+  const ranBack = () => {
+    if (ran < images.length - 1) {
+      setRan(ran + 1)
+    } else {
+      setRan(0)
+    }
+    }
+  
   const random = () => {
   const aleatory = Math.floor(Math.random() * phrase.length - 1) + 1;
   setIndex(aleatory) 
     }
-  document.body.style = `background-image: url(${images[3 - (index % 3)]})`
+    const handleButtonClick = () => {
+      ranBack();
+      random();
+    };
+  
+  document.body.style = `background-image: url(${images[ran]})`
 
   return (
     <article className='container'>
+      <h1>GALLETAS DE LA FORTUNA</h1>
       <FortuneCookie data={phrase [index]}/>
       <div className='btn_phrase'>
-        <button onClick={random}>Otro</button>
+        <button onClick={handleButtonClick}>
+          <img src="/public/cookie.png" alt="img-cookie" />
+        </button>
       </div>
     </article>
   )

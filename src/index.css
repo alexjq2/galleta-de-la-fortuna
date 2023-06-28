@@ -37,7 +37,8 @@ body {
 }
 
 .phrase_card p {
-   margin: 26px 40px 5px 40px;
+   margin: 24px 40px 5px 40px;
+   min-width: 230px;
    max-height: 53px;
    min-height: 53px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

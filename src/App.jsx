@@ -38,7 +38,7 @@ function App() {
       <FortuneCookie data={phrase [index]}/>
       <div className='btn_phrase'>
         <button onClick={handleButtonClick}>
-          <img src="/public/cookie.png" alt="img-cookie" />
+          <img src="/cookie.png" alt="img-cookie" />
         </button>
       </div>
     </article>
